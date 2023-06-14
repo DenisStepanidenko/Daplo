@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DAPLO CREATE APP</title>
+    <link rel="stylesheet" href ="/css/create_app.css">
+</head>
+<body>
+<img src="/images/59f86e9a43e6f89908a4f0b948915bef.png" class ="fon">
+<div >
+    <a href ="/Function_Or_Design">
+        <img src ="/images/maket.svg" class = "menu_design">
+        <span class ="text_design"> Design </span>
+    </a>
+
+    <a href = "/create_app_of_color" >
+        <img src ="/images/design.svg" class = "menu_color">
+        <span class ="text_color"> Color </span>
+    </a>
+    <a href="/Function_Or_Design" >
+        <img src ="/images/function.svg" class = "menu_function">
+        <span class ="text_function"> Function </span>
+    </a>
+</div>
+
+<form action="/logout" method="post">
+    <input type="hidden" name="_csrf" th:value="${_csrf.token}" />
+<!--    <button class="glo-on-hover" type="button" value="Sign Out"></button>-->
+    <button type = "submit" class="glo-on-hover">
+        SIGN OUT
+    </button>
+</form>
+
+</body>
+</html>
